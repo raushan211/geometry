@@ -15,18 +15,18 @@ func main() {
 	var result float32
 	if number == 1 && operation == 1 {
 		fmt.Println("enter length: ")
-		var length int
+		var length float32
 		fmt.Scanln(&length)
 		fmt.Println("enter breadth: ")
-		var breadth int
+		var breadth float32
 		fmt.Scanln(&breadth)
 		result = length * breadth
 	} else if number == 1 && operation == 2 {
 		fmt.Println("enter length: ")
-		var length int
+		var length float32
 		fmt.Scanln(&length)
 		fmt.Println("enter breadth: ")
-		var breadth int
+		var breadth float32
 		fmt.Scanln(&breadth)
 		result = 2 * (length + breadth)
 	} else if number == 2 && operation == 1 {
@@ -44,13 +44,14 @@ func main() {
 		var side float32
 		fmt.Scanln(&side)
 		result = side * side
-	} else if number == 3 && opearation == 2 {
+	} else if number == 3 && operation == 2 {
 		fmt.Println("enter side: ")
 		var side float32
 		fmt.Scanln(&side)
 		result = 4 * side
 	} else {
 		fmt.Println("wrong input")
+		return
 	}
-	fmt.Println(result)
+	fmt.Println("answer: ", result)
 }
